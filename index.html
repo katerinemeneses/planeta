@@ -1,0 +1,55 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <link rel="stylesheet" href="./styles.css">
+ </head>
+ <body>
+    <main>
+        <section class="contenedor-planetas" id="contenedorPlanetas">
+          <div class="tierra">
+            <h2 id="planetaTierra">Planeta Tierra</h2>
+            <img src="https://cdn.pixabay.com/photo/2017/01/31/20/22/earth-2026996_960_720.png" alt="">
+          </div>
+          <div class="marte">
+            <h2 id="marte">Marte</h2>
+            <img src="https://cdn.pixabay.com/photo/2017/01/31/20/22/cartoon-2026994__340.png" alt="">
+          </div>
+          <div class="jupiter">
+            <h2 id="jupiter">Júpiter</h2>
+            <img src="https://cdn.pixabay.com/photo/2016/08/30/03/06/jupiter-1629708__340.png" alt="">
+          </div>
+        </section>
+      
+        <!--SECCION DATOS  INGRESADOS -->
+      
+        <section class="usuario">
+          <h1>¿Quieres saber cuánto pesarías en otros planetas?</h1>
+          <form class="centrar" id="myForm">
+            <div class="datos-usuario">
+              <div class="centrar-img">
+                <img src="peso.png" alt="">
+                <p>Ingresa tu peso</p>
+              </div>
+              <input type="text" id="pesoUsuario" class="input" >
+            </div>
+            <div class="centrar-img">
+              <img src="seleccionar.png" alt="" class="checkbox">
+              <p>Selecciona un 🌎</p>
+            </div>
+            <div>
+              <select id="seleccionarPlanetas">
+                <option value="">Planeta Tierra</option>
+                <option value="">Marte</option>
+                <option value="">Jupiter</option>
+              </select>
+              <input type="submit" value="Tu peso"  class="boton-peso">
+            </div>
+          </form>
+        </section>
+      </main>
+ </body>
+ </html>

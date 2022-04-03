@@ -1,0 +1,159 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+html{
+    scroll-behavior: smooth;
+    font-size: 10px;
+    width: 100%;
+    height: 100%;
+}
+body{
+    height: 100vh;
+    background-image: linear-gradient(to left top, #f4f4f4, #abbae0, #8e7fe6, #cc6ecc, #070406);
+    font-family: 'Anton', sans-serif;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+main{
+    width: 1000px;
+    height: 500px;
+    box-shadow: 5px 10px  15px 5px rgb(128, 128, 128);
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 1em;
+    overflow: hidden;
+
+    display: flex;
+}
+img{
+   max-width: 100%;
+    width: 130px;
+    filter: blur(5px);
+    filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7));
+}
+.contenedor-planetas{
+    width: 70%;
+    padding: 2em;
+    background-color: rgba(0, 0, 0, 0.657);
+    backdrop-filter: blur(5px);
+
+    display: flex;
+    justify-content: space-between;
+}
+div{
+    width: 200px;
+    line-height: 2;
+    text-align: center;
+    cursor: pointer;
+}
+h2{
+    font-size: 3rem;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: url("./galaxia.jpg");
+    background-position: center;
+}  
+.marte{
+  align-self: center;
+
+  line-height: 1;
+}
+.jupiter{
+    align-self: flex-end;
+}
+.tierra h2{
+    background-image: url("https://cdn.pixabay.com/photo/2017/01/31/20/22/earth-2026996_960_720.png");
+}
+.marte h2{
+    background-image: url("https://cdn.pixabay.com/photo/2017/01/31/20/22/cartoon-2026994__340.png");
+}
+.jupiter h2{
+    background-image: url("https://cdn.pixabay.com/photo/2016/08/30/03/06/jupiter-1629708__340.png");
+}
+.marte img{
+  width: 150px;
+}
+
+/*Ingresar datos*/
+
+.usuario{
+    width: 100%;
+    height: 100%;
+    background-color: #ffbc35;
+    padding: 1.5em;
+}
+.usuario h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
+    text-align: center;
+    padding-left: 0;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+.centrar{
+    font-size: 0;
+    line-height: 0;
+
+    margin-inline: auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.centrar-img{
+    display: flex;
+    align-items: center;
+    column-gap: .5em;
+}
+.centrar-img img {
+    width: 20%;
+}
+.centrar-img .checkbox{
+    width: 15%;
+}
+.centrar-img p{
+    font-size: 1.8rem;
+    margin: 0.5em 0;
+}
+select, input{
+    border: 0;
+    background: 0;
+
+    width: 100%;
+    padding: .5em 0;
+    text-indent: .8em;
+    background-color: #fff;
+    font-size: 1.5rem;
+    border-radius: .2em;
+    box-shadow: inset 1px 1px 5px 1px #c49028,
+    1px 1px 5px 1px #d1b376 ;
+    cursor: pointer;
+}
+:is(select, input):focus {
+    outline: 0;
+}
+.boton-peso{
+    box-shadow: none;
+    background: 0;
+    text-indent: 0;
+
+    width: 70%;
+    background-color: #7d447d;
+    padding: .3em;
+    border-radius: 1em;
+    font-size: 1.8rem;
+    color: #fff;
+    text-transform: uppercase;
+    box-shadow: 1px 1px 5px 1px #3e3d3e;
+    margin-top: 1.5em;
+    cursor: pointer;
+} 
